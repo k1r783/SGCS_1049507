@@ -1,0 +1,4 @@
+-- Rollback guidance for 001 (do not run automatically).
+-- Restore database/backups/sgcs_db_pre_migration_20260818.sql if verification fails.
+-- Do not drop new columns/tables while application code or historical data depends on them.
+-- After restoring, confirm table row counts and approval history against the backup.

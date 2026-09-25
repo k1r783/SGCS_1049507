@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS schema_migrations (
+    migration_id VARCHAR(100) PRIMARY KEY,
+    applied_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    checksum VARCHAR(64) NULL,
+    notes VARCHAR(255) NULL
+) ENGINE=InnoDB;
